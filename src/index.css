@@ -1,13 +1,62 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+}
+.form{
+  display: flex;
+  flex-direction:column;
+}
+.form input{
+  width:100%;
+  /* margin: 0.7rem auto; */
+  height: 1.7rem;
+  border:2px solid black;
+  border-radius: 4px;
+}
+.sub{
+  background-color: rgb(105, 105, 212);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  width:10rem;
+}
+.ch{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 1rem 1rem;
+}
+.kk{
+  width: 10rem;
+    text-align: center;
+    margin: auto;
+}
+.ll{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ll input{
+  width:1rem
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@media screen and (max-width:850px){
+  .form input{
+    width:80%;
+  }
+  .ll input{
+    width: 1rem;
+  }
+}
+@media screen and (max-width:750px){
+  .form input{
+    width:60%;
+  }
+  .ll input{
+    width: 1rem;
+  }
+}
+@media screen and (max-width:600px){
+  .mainbox{
+    flex-direction: row;
+  }
 }
